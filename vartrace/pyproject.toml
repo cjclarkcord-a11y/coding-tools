@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vartrace"
+version = "0.1.0"
+description = "Trace variable data flow through Python source code"
+requires-python = ">=3.10"
+
+[project.scripts]
+vartrace = "vartrace.cli:main"
