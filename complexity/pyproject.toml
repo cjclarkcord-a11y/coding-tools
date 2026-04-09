@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "complexity"
+version = "0.1.0"
+description = "Find complexity hotspots in Python and MATLAB code"
+requires-python = ">=3.10"
+
+[tool.setuptools.packages.find]
+include = ["complexity*"]
+
+[project.scripts]
+complexity = "complexity.cli:main"

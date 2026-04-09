@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "copypaste"
+version = "0.1.0"
+description = "Detect duplicate and near-duplicate code blocks"
+requires-python = ">=3.10"
+
+[tool.setuptools.packages.find]
+include = ["copypaste*"]
+
+[project.scripts]
+copypaste = "copypaste.cli:main"

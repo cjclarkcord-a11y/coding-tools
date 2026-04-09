@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "staletrack"
+version = "0.1.0"
+description = "Track stale TODOs, FIXMEs, and commented-out code with git blame ages"
+requires-python = ">=3.10"
+
+[tool.setuptools.packages.find]
+include = ["staletrack*"]
+
+[project.scripts]
+staletrack = "staletrack.cli:main"

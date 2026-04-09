@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "erroraudit"
+version = "0.1.0"
+description = "Audit error handling patterns in Python and MATLAB code"
+requires-python = ">=3.10"
+
+[tool.setuptools.packages.find]
+include = ["erroraudit*"]
+
+[project.scripts]
+erroraudit = "erroraudit.cli:main"
