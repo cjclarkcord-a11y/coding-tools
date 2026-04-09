@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vartrace-matlab"
+version = "0.1.0"
+description = "Trace variable data flow through MATLAB source code"
+requires-python = ">=3.10"
+
+[tool.setuptools.packages.find]
+include = ["vartrace_matlab*"]
+
+[project.scripts]
+vartrace-matlab = "vartrace_matlab.cli:main"
