@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "audit"
+version = "0.1.0"
+description = "Run all code analysis tools and produce a condensed audit summary"
+requires-python = ">=3.10"
+
+[tool.setuptools.packages.find]
+include = ["audit*"]
+
+[project.scripts]
+audit = "audit.cli:main"
